@@ -49,10 +49,6 @@ migrate/dryrun:
 db/reset:
 	$(DOCKER_COMPOSE_CMD) exec mysql mysql -u treasure -p$(PASS) -e "DROP DATABASE treasure; CREATE DATABASE treasure;"
 
-test:
-	$(MAKE) query FILE=app/sql/q2.sql
-	$(MAKE) query FILE=app/sql/q3.sql
-
 $(DOCKER_COMPOSE): $(BIN_DIR)
 	curl -L https://github.com/docker/compose/releases/download/$(DOCKER_COMPOSE_VERSION)/docker-compose-$(shell uname -s)-$(shell uname -m) > $@
 	chmod +x $@
