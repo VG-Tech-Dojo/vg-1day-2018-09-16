@@ -1,3 +1,4 @@
+
 -- +migrate Up
 CREATE TABLE veges (
   id INT  NOT NULL AUTO_INCREMENT,

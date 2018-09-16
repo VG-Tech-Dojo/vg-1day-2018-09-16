@@ -1,5 +1,4 @@
 
-
 -- +migrate Up
 CREATE TABLE users (
   id INT NOT NULL AUTO_INCREMENT,

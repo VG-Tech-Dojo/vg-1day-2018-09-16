@@ -1,4 +1,4 @@
--- +migrate Up
+
 CREATE TABLE history (
   user_email VARCHAR(255) NOT NULL,
   select_date DATETIME NOT NULL,
