@@ -5,7 +5,9 @@ CREATE TABLE order_items (
   order_id INT NOT NULL,
   item_id INT NOT NULL,
   amount INT NOT NULL,
-  PRIMARY KEY(id)
+  PRIMARY KEY(id),
+  FOREIGN KEY(order_id) REFERENCES orders(id),
+  FOREIGN KEY(item_id) REFERENCES items(id)
 );
 
 -- +migrate Down
