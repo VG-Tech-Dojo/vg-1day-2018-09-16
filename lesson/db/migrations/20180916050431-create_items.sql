@@ -9,4 +9,4 @@ CREATE TABLE items
 );
 
 -- +migrate Down
-DROP TABLE item;
+DROP TABLE items;
