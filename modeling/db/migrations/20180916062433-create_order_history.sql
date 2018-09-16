@@ -11,7 +11,5 @@ CREATE TABLE order_history (
 );
 
 
-
-
 -- +migrate Down
 DROP TABLE order_history;
